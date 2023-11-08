@@ -83,25 +83,6 @@ function updateExpenseTable() {
     
         const ctx = document.getElementById("expense-chart").getContext("2d");
     
-        new Chart(ctx, {
-            type: "doughnut",
-            data: {
-                labels: categories,
-                datasets: [{
-                    data: expenseAmounts,
-                    backgroundColor: [
-                        "rgb(255, 99, 132)", // Cor para Alimentação
-                        "rgb(54, 162, 235)", // Cor para Moradia
-                        "rgb(255, 205, 86)", // Cor para Transporte
-                        "rgb(75, 192, 192)"  // Cor para Lazer
-                        // Adicione mais cores conforme necessário
-                    ],
-                }],
-            },
-            options: {
-                width: 100, // Largura desejada
-                height: 100, // Altura desejada
-                }
+       
         });
-    });
     
